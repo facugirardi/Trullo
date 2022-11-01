@@ -1,3 +1,70 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 17px;
+}
+
+body {
+    font-family: 'Archivo Narrow', sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 3%;
+}
+.header .logo a img{
+    height: 70px;
+    width: auto;
+}
+
+.header .logo {
+    cursor: pointer;
+}
+#nav-links li a{
+    font-size: 20px;
+}
+
+a:visited, a:active, a:link, .nav-links{
+    list-style: none;
+    text-decoration: none;
+}
+.nav-links li{
+    margin: 0 10px;
+
+}
+.nav-links li a {
+    color: #2d2e32;
+    font-weight: 750;
+}
+.nav-links{
+    display: flex;
+    text-decoration: none;
+}
+
+.log-in-btn{
+
+    font-weight: 600;
+    color: #3e2a46;
+    padding: 8px 10px;
+    margin-right: 10px;
+    border: 1.6px solid #3e2a46;
+}
+
+.sign-in-btn {
+
+    font-weight: 600;
+    color: #ffffff;
+    padding: 8px 10px;
+    background-color: #3e2a46;
+}
+
+.sign-in-btn, .log-in-btn {
+    border-radius: 20px;
+}
 body {
     overflow-y: hidden; 
     overflow-x: hidden; 
@@ -13,7 +80,7 @@ body {
     font-family: 'Archivo Narrow', sans-serif;
     font-size: 62.5px;
     color: #2d2e32;
-    margin-top: 15%;
+    margin-top: 12%;
     margin-left: 3%;  
 }
 
