@@ -2,7 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-size: 15px;
+    font-size: 17px;
 }
 
 body {
@@ -24,6 +24,9 @@ body {
 .header .logo {
     cursor: pointer;
 }
+#nav-links li a{
+    font-size: 20px;
+}
 
 a:visited, a:active, a:link, .nav-links{
     list-style: none;
@@ -43,8 +46,7 @@ a:visited, a:active, a:link, .nav-links{
 }
 
 .log-in-btn{
-    width: 40px;
-    height: 40px;
+
     font-weight: 600;
     color: #3e2a46;
     padding: 8px 10px;
@@ -53,8 +55,7 @@ a:visited, a:active, a:link, .nav-links{
 }
 
 .sign-in-btn {
-    width: 40px;
-    height: 40px;
+
     font-weight: 600;
     color: #ffffff;
     padding: 8px 10px;
