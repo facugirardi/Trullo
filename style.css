@@ -1,0 +1,43 @@
+body {
+    overflow-y: hidden; 
+    overflow-x: hidden; 
+    }  
+
+.main{
+    position: relative;
+    overflow: hidden;
+
+}
+
+.title{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 62.5px;
+    color: #2d2e32;
+    margin-top: 15%;
+    margin-left: 3%;  
+}
+
+.subtitle{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #46484E;
+    margin-left: 3%;
+}
+
+.circle {
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    border-radius: 50%;
+    box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
+    height: 50em;
+    width: 50em;
+    position: absolute; left: 1100px; top: 0px;
+    overflow: hidden;
+  }
+
+
+.bar{
+    height: 200px;
+}
+  
