@@ -43,6 +43,15 @@ a:visited, a:active, a:link, .nav-links{
     color: #2d2e32;
     font-weight: 750;
 }
+
+.nav-links li a:hover{
+    color: #919296;
+    transition: .3s;
+
+
+}
+
+
 .nav-links{
     display: flex;
     text-decoration: none;
@@ -53,7 +62,7 @@ a:visited, a:active, a:link, .nav-links{
     color: #3e2a46;
     padding: 6px 27.5px;
     margin-right: 10px;
-    border: 1.6px solid #3e2a46;
+    border: 1px solid #3e2a46;
 }
 
 .log-in-btn:hover{
@@ -67,16 +76,37 @@ a:visited, a:active, a:link, .nav-links{
     color: #ffffff;
     padding: 6px 27.5px;
     background-color: #3e2a46;
-    border: 1.6px solid;
+    border: 1px solid;
 }
 
 .sign-in-btn:hover{
     color: #3e2a46;
     background-color: #ffffff;
     transition: .3s;
-    border: 1.6px solid #3e2a46;
+    border: 1px solid #3e2a46;
 
 }
+
+
+.get-btn {
+    font-weight: 600;
+    color: #ffffff;
+    padding: 6px 27.5px;
+    background-color: #3e2a46;
+    border: 1px solid;
+    border-radius: 20px;
+    margin-left: 7.5%;  
+    display:inline-block;
+    margin-top: 1%;
+}
+
+.get-btn:hover{
+    color: #3e2a46;
+    background-color: #ffffff;
+    transition: .3s;
+    border: 1px solid #3e2a46;
+}
+
 
 .sign-in-btn, .log-in-btn {
     border-radius: 20px;
@@ -103,35 +133,21 @@ a:visited, a:active, a:link, .nav-links{
     font-size: 30px;
     color: #46484E;
     margin-left: 7.5%;
+    margin-top: .2%;
 }
 
 .circle {
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     border-radius: 50%;
-    box-shadow: 0.375em 0.375em 0 0 rgba(15, 28, 63, 0.125);
     height: 70%;
     width: 55%;
     position: absolute; left: 75%; top: 2.5%;
     overflow: hidden;
-  }
+}
 
 
 .bar{
     height: 1000px;
 }
   
-
-@media only screen and (max-width: 1150) {
-    .circle{
-        opacity: 0;
-    }
-  }
-
-@media only screen and (max-width: 800px) {
-
-    /*Agregar navegacion para celulares*/
-
-}
-
-
