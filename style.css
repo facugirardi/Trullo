@@ -49,7 +49,6 @@ a:visited, a:active, a:link, .nav-links{
 }
 
 .log-in-btn{
-
     font-weight: 600;
     color: #3e2a46;
     padding: 6px 27.5px;
@@ -57,11 +56,26 @@ a:visited, a:active, a:link, .nav-links{
     border: 1.6px solid #3e2a46;
 }
 
+.log-in-btn:hover{
+    background-color: #3e2a46;
+    color: #ffffff;
+    transition: .3s;
+}
+
 .sign-in-btn {
     font-weight: 600;
     color: #ffffff;
     padding: 6px 27.5px;
     background-color: #3e2a46;
+    border: 1.6px solid;
+}
+
+.sign-in-btn:hover{
+    color: #3e2a46;
+    background-color: #ffffff;
+    transition: .3s;
+    border: 1.6px solid #3e2a46;
+
 }
 
 .sign-in-btn, .log-in-btn {
