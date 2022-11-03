@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Overpass', sans-serif;
     overflow-y: hidden; 
     overflow-x: hidden; 
     
@@ -20,7 +20,7 @@ body {
     padding: 5px 3%;
 }
 .header .logo a img{
-    height: 70px;
+    height: 87.5px;
     width: auto;
 }
 
@@ -60,7 +60,9 @@ a:visited, a:active, a:link, .nav-links{
 .log-in-btn{
     font-weight: 600;
     color: #3e2a46;
-    padding: 6px 27.5px;
+    padding: 7.5px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-right: 10px;
     border: 1px solid #3e2a46;
 }
@@ -74,7 +76,9 @@ a:visited, a:active, a:link, .nav-links{
 .sign-in-btn {
     font-weight: 600;
     color: #ffffff;
-    padding: 6px 27.5px;
+    padding: 7.5px;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #3e2a46;
     border: 1px solid;
 }
@@ -94,10 +98,13 @@ a:visited, a:active, a:link, .nav-links{
     padding: 6px 27.5px;
     background-color: #3e2a46;
     border: 1px solid;
-    border-radius: 20px;
+    border-radius: 17.5px;
     margin-left: 7.5%;  
     display:inline-block;
     margin-top: 1.5%;
+    padding: 7.5px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .get-btn:hover{
@@ -109,7 +116,7 @@ a:visited, a:active, a:link, .nav-links{
 
 
 .sign-in-btn, .log-in-btn {
-    border-radius: 20px;
+    border-radius: 17.5px;
 }
 
 
@@ -121,19 +128,19 @@ a:visited, a:active, a:link, .nav-links{
 
 .title{
     font-family: 'Archivo Narrow', sans-serif;
-    font-size: 57.5px;
+    font-size: 58px;
     color: #2d2e32;
-    margin-top: 12%;
+    margin-top: 11%;
     margin-left: 7.5%;  
 }
 
 .subtitle{
     font-family: 'Archivo Narrow', sans-serif;
     font-weight: 500;
-    font-size: 22.5px;
+    font-size: 23px;
     color: #46484E;
     margin-left: 7.5%;
-    margin-top: .5%;
+    margin-top: 1%;
 }
 
 .circle {
@@ -141,9 +148,16 @@ a:visited, a:active, a:link, .nav-links{
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     border-radius: 50%;
     height: 70%;
-    width: 55%;
-    position: absolute; left: 75%; top: 2.5%;
+    width: 65%;
+    position: absolute; left: 70%; top: 2.5%;
     overflow: hidden;
+}
+
+.img{
+    position: absolute; left: 53%; top: 7.5%;
+    z-index: 50;
+
+
 }
 
 
