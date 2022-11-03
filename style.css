@@ -143,6 +143,16 @@ a:visited, a:active, a:link, .nav-links{
     margin-top: 1%;
 }
 
+.subtitle2{
+    font-family: 'Archivo Narrow', sans-serif;
+    font-weight: 500;
+    font-size: 23px;
+    color: #46484E;
+    margin-left: 7.5%;
+    line-height: 31px;
+    margin-top: 1%;
+}
+
 .circle {
     background: rgb(131,58,180);
     background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
