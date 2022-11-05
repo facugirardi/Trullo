@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../css/log-in.css">
+    <link rel="stylesheet" href="../css/buttons.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="icon" href="../assets/tlogo.png">
     <title>Prices - Trullo</title>
@@ -36,8 +36,26 @@
     </header>
 
     <main>
-        <section></section>
-    </main>
+        <section class="register-section">
 
+            <!-- add action and method to the form-->
+            <form>
+                <div id="heading-2">
+                    <h2>LOG IN</h2>
+                </div>  
+                <section class="inputs-labels">
+                    <div class="usuario">
+                        <label for="inputUsuario">Usuario / Email</label>
+                        <input type="text" id="inputUsuario">
+                    </div>
+                    <div class="contrasenia">
+                        <label for="inputContrasenia">Contraseña</label>
+                        <input type="password" id="inputContrasenia">
+                    </div>
+                </section>
+                <button>Acess</button>
+            </form>
+        </section>
+    </main>
 </body>
 </html>
