@@ -12,7 +12,7 @@
     }   
 
 .usuario {
-    margin: 50px 0;
+    margin: 45px 0;
 }
 
 .usuario input, .contrasenia input {
@@ -34,28 +34,21 @@
     font-size: 20px;
 }
 
-.register-section button {
-    font-size: 13.3px;
-    font-weight: 700;
-    background-color: var(--colorprimary);
-    color: #fff;
-    border-radius: 10px;
-    padding: 5px 8px;
-    margin-top: 15px;
-}
-
 .inputs-labels {
     margin-top: -20px;
 }
 
-#heading-2 {
-    padding: 10px 0;
+.btnsend{
+    margin-top: 30px;
+    margin-left: 0px;
+}
 
+#heading-2 {
+    padding: 7px 0;
     background-color: var(--colorprimary);
-    border-radius: 30px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     margin: 0;
 }
