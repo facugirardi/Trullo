@@ -257,37 +257,13 @@ margin-left: 20%;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Pagina de Precios */
 
 .containerp{
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 90vh;
+  min-height: 85vh;
 }
 
 .wrapper{
