@@ -43,16 +43,11 @@
     margin-left: 0px;
 }
 
-#heading-2 {
-    padding: 2.5% 0;
-    background-color: var(--colorprimary);
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0;
-}
 
 #heading-2 h2 {
-    color: #fff;
+    font-weight: bold;
+    color: var(--colorprimary);
+    padding: 8.5px;
+    border-bottom: 3px solid #3e2a46;
+
 }
