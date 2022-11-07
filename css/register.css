@@ -1,0 +1,58 @@
+
+.register-section {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    width: 300px;
+    height: 50%;
+    border-radius: 25px;
+    margin: 100px auto;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    --colorprimary: #3e2a46;
+    }   
+
+.usuario {
+    margin: 45px 0;
+}
+
+.usuario input, .contrasenia input {
+    border-radius: 15px;
+    width: 100%;
+    padding: 5px;
+}
+
+.usuario, .contrasenia, .register-section{
+    text-align: center;
+}
+
+.usuario label , .contrasenia label {
+    margin-bottom: 10%;
+}
+
+.register-section h2 {
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.inputs-labels {
+    margin-top: -5%;
+}
+
+.btnsend{
+    margin-top: 12.5%;
+    margin-left: 0px;
+}
+
+#heading-2 {
+    padding: 2.5% 0;
+    background-color: var(--colorprimary);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+
+#heading-2 h2 {
+    color: #fff;
+}
