@@ -5,6 +5,15 @@
     font-size: 17px;
 }
 
+::-moz-selection {
+  background:  #3e2a46;
+}
+::selection      {
+  background:  #3e2a46;
+}
+
+
+
 body {
     font-family: 'Overpass', sans-serif;
     overflow-y: hidden; 
