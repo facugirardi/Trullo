@@ -90,8 +90,8 @@ class Card{
 
         this.deleteButton = document.createElement('button');
         this.deleteButton.innerText = "X";
-        this.deleteButton.addEventListener('click', ()=>{
-            this.deleteCard.call(this);
+            this.deleteButton.addEventListener('click', ()=>{
+                this.deleteCard.call(this);
         });
 
         this.card.append(this.p);
@@ -105,7 +105,6 @@ class Card{
         let i = this.todoList.cardArray.indexOf(this);
         this.todoList.cardArray.splice(i,1);
     }
-
 
     showMenu(){
 
@@ -279,7 +278,6 @@ addTodoListButton.addEventListener('click',()=>{
     document.getElementById("addTodoListButton").textContent= "List Limit Reached";
 }
 });
-
 
 
 let todoList1 = new todoList(root);

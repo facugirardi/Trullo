@@ -8,11 +8,10 @@
 ::-moz-selection {
 background:  #3e2a46;
 }
+
 ::selection      {
 background:  #3e2a46;
 }
-
-
 
 body {
   font-family: 'Overpass', sans-serif;
@@ -174,7 +173,7 @@ font-size: 22.5px;
 color: #46484E;
 margin-left: 15%;
 position: absolute;
-margin-top: 13%;
+margin-top: 12%;
 }
 
 .circle {
