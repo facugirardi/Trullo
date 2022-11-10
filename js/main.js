@@ -91,8 +91,8 @@ class Card{
 
         this.deleteButton = document.createElement('button');
         this.deleteButton.innerText = "X";
-            this.deleteButton.addEventListener('click', ()=>{
-                this.deleteCard.call(this);
+        this.deleteButton.addEventListener('click', ()=>{
+            this.deleteCard.call(this);
         });
 
         this.card.append(this.p);
