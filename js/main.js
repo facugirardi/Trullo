@@ -323,7 +323,7 @@ addTodoListButton.addEventListener('click',()=>{
     new todoList(root, addTodoListInput.value);
     addTodoListInput.value = "";
     listLimit += 1;
-    document.getElementById("addTodoListButton").textContent= "Add";
+    document.getElementById("addTodoListButton").textContent= "Add new list";
    }
 } else{
     document.getElementById("addTodoListButton").textContent= "List Limit Reached";
