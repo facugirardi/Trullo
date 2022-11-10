@@ -11,7 +11,6 @@ let dragItem = null;
 function dragStart() {
     console.log('drag started');
     dragItem = this;
-    // setTimeout(() => this.className = 'invisible', 0)
 }
 
 function dragEnd() {
