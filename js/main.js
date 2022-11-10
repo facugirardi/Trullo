@@ -1,5 +1,42 @@
 let root = document.getElementById("root");
 
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
+}
+
+let dragItem = null;
+
+function dragStart() {
+    console.log('drag started');
+    dragItem = this;
+    // setTimeout(() => this.className = 'invisible', 0)
+}
+
+function dragEnd() {
+    console.log('drag ended');
+  	dragItem = null;
+}
+
+function dragOver(e) {
+    e.preventDefault();
+    console.log('drag over');
+}
+
+function dragEnter() {
+    console.log('drag entered');
+}
+
+function dragLeave() {
+    console.log('drag left');
+}
+
+function dragDrop() {
+    console.log('drag dropped');
+    console.log(this);
+    this.append(dragItem);
+}
 
 class todoList{
     constructor(place, title = "To-Do"){
@@ -16,7 +53,6 @@ class todoList{
         this.cardArray.push(new Card(text, this.div, this));
     }
 
-
     render(){
         this.createToDoListElement();
         this.place.append(this.todoListElement);
@@ -29,6 +65,18 @@ class todoList{
     }
 
     createToDoListElement(){
+        this.div = document.createElement('div');
+
+        this.div.setAttribute('style', 'min-height: 50px;');
+        this.div.id = 'column-' + getRandomInt(1,10);
+        this.div.classList.add("tasks-column");
+
+        this.div.addEventListener('dragover', dragOver);
+        this.div.addEventListener('dragenter', dragEnter);
+        this.div.addEventListener('dragleave', dragLeave);
+        this.div.addEventListener('drop', dragDrop);
+
+
         this.h2 = document.createElement('h2');
         this.h2.innerText = this.title;
         this.deleteButton = document.createElement('button');
@@ -43,7 +91,7 @@ class todoList{
         this.button.innerText = 'Add';
         this.button.classList.add("btn-save");
         this.button.id = "to-do-list-button";
-        this.div = document.createElement('div');
+        
         this.todoListElement = document.createElement('div');
 
         this.button.addEventListener('click', ()=>{
@@ -78,14 +126,18 @@ class Card{
 
     render(){
         this.card = document.createElement('div');
+        this.card.id = 'card-' + getRandomInt(1,5000);
         this.card.classList.add("card");
         this.card.addEventListener('click', (e)=>{
             if(e.target != this.deleteButton){
                 this.showMenu.call(this);
             }
         });
-        this.card.setAttribute("draggable", "true");
-        
+
+        this.card.draggable="true";
+        this.card.addEventListener('dragstart', dragStart)
+        this.card.addEventListener('dragend', dragEnd)
+
         this.p = document.createElement('p');
         this.p.innerText = this.state.text;
 
@@ -170,7 +222,6 @@ class Card{
         });
     }
 }
-
 
 
 class EditableText{
@@ -280,8 +331,6 @@ addTodoListButton.addEventListener('click',()=>{
 }
 });
 
-
 let todoList1 = new todoList(root);
 let todoList2 = new todoList(root, 'Doing');
 let todoList3 = new todoList(root, 'Done')
-    
