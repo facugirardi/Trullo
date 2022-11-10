@@ -84,7 +84,8 @@ class Card{
                 this.showMenu.call(this);
             }
         });
-
+        this.card.setAttribute("draggable", "true");
+        
         this.p = document.createElement('p');
         this.p.innerText = this.state.text;
 
@@ -283,3 +284,4 @@ addTodoListButton.addEventListener('click',()=>{
 let todoList1 = new todoList(root);
 let todoList2 = new todoList(root, 'Doing');
 let todoList3 = new todoList(root, 'Done')
+    
