@@ -14,10 +14,9 @@
             $user = $results;
         }
     }
-
-
-
-
+    else {
+        header("location: /Trullo/views/log-in.php");
+    }
 ?>
 
 <!DOCTYPE html>
@@ -51,11 +50,11 @@
                 <li><a href="about.html">ABOUT US</a></li>
             </ul>
         </nav>
-<!--        sign-in-btn-->
+
         <div class="buttons">
             <a href="" class="log-in-btn">PROJECTS</a>
             <?php if (!empty($user)):?>
-                <a href="" class="sign-in-btn"> <?= $user["nombre"]?></a>
+                <a href="profile.php" class="sign-in-btn"> <?= $user["nombre"]?></a>
             <?php endif;?>
         </div>
     </header>
