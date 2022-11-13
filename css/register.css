@@ -8,11 +8,11 @@ main
 
 .register-section {
     box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-    border: 1px solid rgb(0 0 0 0.3);
+    border: 1px solid rgb(0 0 0 / 0.3);
     width: 300px;
     height: 50%;
     border-radius: 25px;
-
+    position: relative;
     box-sizing: border-box;
     padding: 20px 30px;
     --colorprimary: #3e2a46;
@@ -62,4 +62,11 @@ main
     font-weight: bold;
     padding: 8.5px;
     color: #ffff;
+}
+
+.php-message {
+    margin: 20px 0 15px 0;
+    background-color: gray;
+    padding: 10px;
+    border-radius: 20px;
 }
