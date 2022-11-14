@@ -1,3 +1,7 @@
+<?php
+    require "../php/connection.php";
+    require "../php/user.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,21 +19,26 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a href="../index.html">
+            <a href="../index.php">
                 <img src="../assets/trullo-logo.png" alt="trullo-logo">
             </a>
         </div>
         <nav>
             <ul class="nav-links">
                 <li><a href="why.html">WHY TRULLO?</a></li>
-                <li><a href="prices.html">PRICES</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="prices.php">PRICES</a></li>
+                <li><a href="contact.php">CONTACT US</a></li>
+                <li><a href="about.php">ABOUT US</a></li>
             </ul>
         </nav>
         <div class="buttons">
-            <a href="log-in.php" class="log-in-btn">LOGIN</a>
-            <a href="register.php" class="sign-in-btn">REGISTER</a>
+            <?php if(!empty($user)): ?>
+                <a href="" class="log-in-btn">PROJECTS</a>
+                <a href="profile.php" class="sign-in-btn"> <?= strtoupper($user["nombre"])?></a>
+            <?php else: ?>
+                <a href="log-in.php" class="log-in-btn">LOGIN</a>
+                <a href="register.php" class="sign-in-btn">REGISTER</a>
+            <?php endif; ?>
         </div>
     </header>
     <main>

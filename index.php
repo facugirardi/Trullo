@@ -1,3 +1,7 @@
+<?php
+    require "php/connection.php";
+    require "php/user.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,21 +19,26 @@
 <body>
 <header class="header">
     <div class="logo">
-        <a href="index.html">
+        <a href="index.php">
             <img src="assets/trullo-logo.png" alt="trullo-logo">
         </a>
     </div>
     <nav>
         <ul class="nav-links">
-            <li><a href="views/why.html">WHY TRULLO?</a></li>
-            <li><a href="views/prices.html">PRICES</a></li>
-            <li><a href="views/contact.html">CONTACT US</a></li>
-            <li><a href="views/about.html">ABOUT US</a></li>
+            <li><a href="views/why.php">WHY TRULLO?</a></li>
+            <li><a href="views/prices.php">PRICES</a></li>
+            <li><a href="views/contact.php">CONTACT US</a></li>
+            <li><a href="views/about.php">ABOUT US</a></li>
         </ul>
     </nav>
     <div class="buttons">
-        <a href="views/log-in.php" class="log-in-btn">LOGIN</a>
-        <a href="views/register.php" class="sign-in-btn">REGISTER</a>
+        <?php if(!empty($user)): ?>
+            <a href="" class="log-in-btn">PROJECTS</a>
+            <a href="views/profile.php" class="sign-in-btn"> <?= strtoupper($user["nombre"])?></a>
+        <?php else: ?>
+            <a href="views/log-in.php" class="log-in-btn">LOGIN</a>
+            <a href="views/register.php" class="sign-in-btn">REGISTER</a>
+        <?php endif; ?>
     </div>
 </header>
 

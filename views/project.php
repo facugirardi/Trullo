@@ -1,22 +1,7 @@
 <?php
-    session_start();
-
     require "../php/connection.php";
 
-    if (isset($_SESSION["user_id"])){
-        $records = $conn->prepare("SELECT id, nombre, email, contrasenia FROM usuarios WHERE id=:id");
-        $records->bindParam(":id", $_SESSION["user_id"]);
-        $records->execute();
-        $results = $records->fetch(PDO::FETCH_ASSOC);
-
-        $user = null;
-        if (count($results) > 0 ){
-            $user = $results;
-        }
-    }
-    else {
-        header("location: /Trullo/views/log-in.php");
-    }
+    require "../php/user.php";
 ?>
 
 <!DOCTYPE html>
@@ -38,23 +23,23 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a href="../index.html">
+            <a href="../index.php">
                 <img src="../assets/trullo-logo.png" alt="trullo-logo">
             </a>
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="why.html">WHY TRULLO?</a></li>
-                <li><a href="prices.html">PRICES</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="why.php">WHY TRULLO?</a></li>
+                <li><a href="prices.php">PRICES</a></li>
+                <li><a href="contact.php">CONTACT US</a></li>
+                <li><a href="about.php">ABOUT US</a></li>
             </ul>
         </nav>
 
         <div class="buttons">
             <a href="" class="log-in-btn">PROJECTS</a>
             <?php if (!empty($user)):?>
-                <a href="profile.php" class="sign-in-btn"> <?= $user["nombre"]?></a>
+                <a href="profile.php" class="sign-in-btn"> <?= strtoupper($user["nombre"])?></a>
             <?php endif;?>
         </div>
     </header>

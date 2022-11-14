@@ -39,16 +39,16 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a href="../index.html">
+            <a href="../index.php">
                 <img src="../assets/trullo-logo.png" alt="trullo-logo">
             </a>
         </div>
         <nav>
             <ul class="nav-links">
-                <li><a href="why.html">WHY TRULLO?</a></li>
-                <li><a href="prices.html">PRICES</a></li>
-                <li><a href="contact.html">CONTACT US</a></li>
-                <li><a href="about.html">ABOUT US</a></li>
+                <li><a href="why.php">WHY TRULLO?</a></li>
+                <li><a href="prices.php">PRICES</a></li>
+                <li><a href="contact.php">CONTACT US</a></li>
+                <li><a href="about.php">ABOUT US</a></li>
             </ul>
         </nav>
         <div class="buttons">
