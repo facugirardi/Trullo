@@ -68,17 +68,17 @@
                 <section class="inputs-labels">
                     <div class="usuario">
                         <label for="inputUsuario">User</label>
-                        <input type="text" id="inputUsuario" placeholder="Enter your username"
+                        <input type="text" id="inputUsuario" placeholder="Username"
                         name="usuario">
                     </div>
                     <div class="usuario">
                         <label for="inputEmail">E-Mail</label>
-                        <input type="email" id="inputEmail" placeholder="Enter your email"
+                        <input type="email" id="inputEmail" placeholder="E-Mail"
                         name="email">
                     </div>
                     <div class="contrasenia">
                         <label for="inputContrasenia">Password</label>
-                        <input type="password" id="inputContrasenia" placeholder="Enter your password"
+                        <input type="password" id="inputContrasenia" placeholder="Password"
                         name="password">
                     </div>
                 </section>

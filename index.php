@@ -33,7 +33,7 @@
     </nav>
     <div class="buttons">
         <?php if(!empty($user)): ?>
-            <a href="" class="log-in-btn">PROJECTS</a>
+            <a href="views/project.php" class="log-in-btn">PROJECTS</a>
             <a href="views/profile.php" class="sign-in-btn"> <?= strtoupper($user["nombre"])?></a>
         <?php else: ?>
             <a href="views/log-in.php" class="log-in-btn">LOGIN</a>
