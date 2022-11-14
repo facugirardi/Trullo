@@ -47,7 +47,7 @@
         <div class="titles">
         <h1 class="title">Organize anything, get<br>results.</h1>
         <p class="subtitle">Trullo is a visual tool that allows teams to manage any type of<br>project and supervise tasks. Imagine a white board, filled with lists of<br>sticky notes, with each note as a task for you and your team</p>
-        <a href="views/project.php" class="get-btn" onclick="log()">GET STARTED</a>
+        <a href="views/prices.php" class="get-btn" onclick="log()">GET STARTED</a>
         </div>
         <div class="circle"></div>
         <div class="bar"></div>
