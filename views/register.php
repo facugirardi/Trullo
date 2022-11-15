@@ -4,17 +4,22 @@
     $message = '';
 
     if (!empty($_POST["usuario"]) && !empty($_POST["email"]) && !empty($_POST["password"])){
-        $sql = "INSERT INTO usuarios (nombre, email, contrasenia) VALUES (:nombre, :email, :password)";
-        $stmt = $conn->prepare($sql);
-        $stmt->bindParam(":nombre", $_POST["usuario"]);
-        $stmt->bindParam(":email", $_POST["email"]);
-        $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
-        $stmt->bindParam(":password", $password);
+        try {
+            $sql = "INSERT INTO usuarios (nombre, email, contrasenia) VALUES (:nombre, :email, :password)";
+            $stmt = $conn->prepare($sql);
+            $stmt->bindParam(":nombre", $_POST["usuario"]);
+            $stmt->bindParam(":email", $_POST["email"]);
+            $password = password_hash($_POST["password"], PASSWORD_DEFAULT);
+            $stmt->bindParam(":password", $password);
 
-        if ($stmt->execute()){
-            $message = "Successfully created new user";
-        } else {
-            $message = "Something went wrong during the registration";
+            if ($stmt->execute()) {
+                $message = "Successfully created new user";
+            } else {
+                $message = "Something went wrong during the registration";
+            }
+
+        } catch (Exception $e) {
+            $message = "El usuario o el mail ya existe";
         }
     }
     

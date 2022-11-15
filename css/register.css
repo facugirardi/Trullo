@@ -1,10 +1,12 @@
-main 
+
+main
 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 .register-section {
     box-shadow: 0 5px 10px rgba(0,0,0,0.3);
@@ -48,7 +50,7 @@ main
 
 .btnsend{
     margin-top: 12.5%;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
 #heading-2 {
