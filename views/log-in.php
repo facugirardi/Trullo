@@ -12,7 +12,7 @@
 
         if (password_verify($_POST["password"], $results["contrasenia"])){
             $_SESSION["user_id"] = $results["id"];
-            header("location: /views/project.php");
+            header("location: /Trullo/views/project.php");
         } else {
             $message = "Sorry, those credentials do not match";
         }

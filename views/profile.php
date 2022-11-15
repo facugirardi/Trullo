@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 require "../php/connection.php";
 
@@ -39,7 +38,7 @@ require "../php/user.php";
     </nav>
 
     <div class="buttons">
-        <a href="" class="log-in-btn">PROJECTS</a>
+        <a href="project.php" class="log-in-btn">PROJECTS</a>
         <?php if (!empty($user)):?>
             <a href="profile.php" class="sign-in-btn"> <?= strtoupper($user["nombre"])?></a>
         <?php endif;?>
