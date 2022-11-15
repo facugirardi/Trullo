@@ -12,7 +12,7 @@
 
         if (password_verify($_POST["password"], $results["contrasenia"])){
             $_SESSION["user_id"] = $results["id"];
-            header("location: /Trullo/views/project.php");
+            header("location: /views/project.php");
         } else {
             $message = "Sorry, those credentials do not match";
         }
@@ -69,12 +69,12 @@
                 <section class="inputs-labels">
                     <div class="usuario">
                         <label for="inputUsuariolg">User</label>
-                        <input type="text" id="inputUsuariolg" placeholder="Enter your username"
+                        <input type="text" id="inputUsuariolg" placeholder="Username"
                         name="usuario" >
                     </div>
                     <div class="contrasenia">
                         <label for="inputContrasenialg">Password</label>
-                        <input type="password" id="inputContrasenialg" placeholder="Enter your password"
+                        <input type="password" id="inputContrasenialg" placeholder="Password"
                         name="password" >
                     </div>
                 </section>
