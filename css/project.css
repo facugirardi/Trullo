@@ -21,8 +21,8 @@ button{
 }
 
 .main{
-    margin-top: -2.5%
-
+    margin-top: -2.5%;
+    position:relative;
 }
 
 #root{
@@ -171,3 +171,33 @@ button{
     margin-left: 0.5em;
 
 }
+
+.main-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 8em;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 0.3);
+    border: 1px solid rgb(0 0 0 / 0.15);
+    margin: auto;
+    margin-top: 7%;
+    position: relative;
+}
+
+.main-div img {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    left: 10px;
+    top: -10px; 
+}
+
+.main-content h1, .main-content h3, .main-content a{ 
+    font-size: 20px;
+}
+
+.user-info, .email-info, .main-content{
+    text-align: center;
+    
+} 

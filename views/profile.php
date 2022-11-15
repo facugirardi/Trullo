@@ -46,7 +46,20 @@ require "../php/user.php";
     </div>
 </header>
     <main class="main">
+        <div class="main-div">
+            <img src="../assets/user-icon.png" alt="user-icon">
+            
+            <div class="main-content">
+                <div class="user-info">
+                    <h1>User:&nbsp;<?= $user["nombre"]?></h1>
+                </div>
+                <div class="email-info">
+                    <h3>Email:&nbsp;<?= $user["email"] ?></h3>
+                </div>
 
+                <a href="../php/logout.php">Log out</a>
+            </div>
+        </div>
     </main>
 </body>
 </html>
