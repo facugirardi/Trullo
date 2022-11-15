@@ -68,7 +68,11 @@ main
 
 .php-message {
     margin: 20px 0 15px 0;
-    background-color: gray;
+    background-color: grey;
     padding: 10px;
     border-radius: 20px;
+}
+
+.php-message p {
+    color: #ffffff;
 }
