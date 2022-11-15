@@ -153,23 +153,18 @@ button{
     color: white;
     border: none;
     border-radius: 5px;
-
     padding: 0.5em;
     margin-top: 0.5em;
-    
 }
 
 .btn-del{
-
     background-color: #3e2a46;
     color: white;
     border: none;
     border-radius: 5px;
-
     padding: 0.5em;
     margin-top: 0.5em;
     margin-left: 0.5em;
-
 }
 
 .main-div {
