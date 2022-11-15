@@ -1,0 +1,75 @@
+
+main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.register-section {
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+    border: 1px solid rgb(0 0 0 / 0.3);
+    width: 300px;
+    height: 50%;
+    border-radius: 25px;
+    position: relative;
+    box-sizing: border-box;
+    padding: 20px 30px;
+    --colorprimary: #3e2a46;
+    margin-top: 3%;
+    }   
+
+.usuario {
+    margin: 45px 0;
+}
+
+.usuario input, .contrasenia input {
+    border-radius: 15px;
+    width: 100%;
+    padding: 5px;
+}
+
+.usuario, .contrasenia, .register-section{
+    text-align: center;
+}
+
+.usuario label , .contrasenia label {
+    margin-bottom: 10%;
+}
+
+.register-section h2 {
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.inputs-labels {
+    margin-top: -5%;
+}
+
+.btnsend{
+    margin-top: 12.5%;
+    margin-left: 0;
+}
+
+#heading-2 {
+    border-radius: 10px;
+    padding: 2.5px;
+    background-color: var(--colorprimary);
+
+}
+
+#heading-2 h2 {
+    font-weight: bold;
+    padding: 8.5px;
+    color: #ffff;
+}
+
+.php-message {
+    color: #ffffff;
+    margin: 20px 0 15px 0;
+    background-color: grey;
+    padding: 10px;
+    border-radius: 20px;
+}
