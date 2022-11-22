@@ -75,17 +75,19 @@ class todoList{
         this.div.addEventListener('dragleave', dragLeave);
         this.div.addEventListener('drop', dragDrop);
 
-
         this.h2 = document.createElement('h2');
         this.h2.innerText = this.title;
+
         this.deleteButton = document.createElement('button');
         this.deleteButton.innerText = "X";
         this.deleteButton.addEventListener('click', ()=>{
             this.removeToDoList.call(this);
         });
         this.deleteButton.classList.add("btn-del");
+
         this.input = document.createElement('input');
         this.input.classList.add("comment");
+
         this.button = document.createElement('button');
         this.button.innerText = 'Add';
         this.button.classList.add("btn-save");
@@ -106,6 +108,7 @@ class todoList{
         this.todoListElement.append(this.deleteButton);
         this.todoListElement.append(this.div);
         this.todoListElement.classList.add("todoList");
+
     }
 }
 
@@ -273,7 +276,7 @@ class EditableText{
             if (event.keyCode === 13) {
                 event.preventDefault();
                 object.saveButton.click();
-              }
+            }
         }
 
         this.input.addEventListener("keyup", (e)=>{
@@ -314,22 +317,48 @@ class Comment{
 
 let addTodoListInput = document.getElementById("addTodoListInput");
 let addTodoListButton = document.getElementById("addTodoListButton");
-let listLimit = 3;
+let listLimit = 0;
 
 addTodoListButton.addEventListener('click',()=>{
-   if(listLimit < 4){
-   if ( addTodoListInput.value.trim() != ""){
-    
-    new todoList(root, addTodoListInput.value);
-    addTodoListInput.value = "";
-    listLimit += 1;
-    document.getElementById("addTodoListButton").textContent= "Add new list";
-   }
-} else{
-    document.getElementById("addTodoListButton").textContent= "List Limit Reached";
-}
+   if(listLimit < 4)
+   {
+        if ( addTodoListInput.value.trim() != "")
+        {
+            new todoList(root, addTodoListInput.value);
+            column_title = addTodoListInput.value;
+            addTodoListInput.value = "";
+            listLimit += 1;
+            document.getElementById("addTodoListButton").textContent= "Add new list";
+            $.ajax({
+                method: "POST",
+                url: "/php/save_column.php",
+                data: { col_name: column_title, col_order: 0 }
+            })
+            .done(function( msg ) {
+                console.log('Columna agregada');
+            });
+        }
+    } 
+    else
+    {
+        document.getElementById("addTodoListButton").textContent= "List Limit Reached";
+    }
 });
 
-let todoList1 = new todoList(root);
-let todoList2 = new todoList(root, 'Doing');
-let todoList3 = new todoList(root, 'Done')
+
+$.ajax({
+    method: "GET",
+    url: "/php/get_columns.php"
+})
+.done(function( result ) {
+
+    let finalColumns = JSON.parse(result);
+    finalColumns.forEach(column => {
+        new todoList(root, column.nombre);
+    });
+    
+});
+
+// let todoList1 = new todoList(root);
+// let todoList2 = new todoList(root, 'Doing');
+// let todoList3 = new todoList(root, 'Done')
