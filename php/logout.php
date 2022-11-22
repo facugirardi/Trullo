@@ -5,5 +5,5 @@
 
     session_destroy();
 
-    header('Location: /Trullo');
+    header('Location: /');
 

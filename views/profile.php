@@ -53,7 +53,7 @@ require "../php/user.php";
                     <h1>User:&nbsp;<?= $user["nombre"]?></h1>
                 </div>
                 <div class="email-info">
-                    <h3>Email:&nbsp;<?= $user["email"] ?></h3>
+                    <h3>E-Mail:&nbsp;<?= $user["email"] ?></h3>
                 </div>
 
                 <a href="../php/logout.php">Log out</a>
