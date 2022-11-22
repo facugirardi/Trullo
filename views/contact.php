@@ -49,11 +49,11 @@
         <p class="subtitle3">Let's get in touch.</p>
         </div>
         <div class="form-cn">
-        <form class="form-contact" onsubmit="sendEmail(); reset(); return false">
+        <form class="form-contact" action="https://formsubmit.co/3553a41246a16c455ecc7510c6faa638" method="POST">
             <h2 class="h2-cn">CONTACT US</h2>
-            <p type="Name:" class="p-cn"><input placeholder="Write your name here..." class="input-cn" id="name" required></input></p>
-            <p type="Email:" class="p-cn"><input placeholder="Write your e-mail..." class="input-cn" id="email" required></input></p>
-            <p type="Message:" class="p-cn"><input placeholder="What would you like to tell us..." class="input-cn" id="message" required></input></p>
+            <p type="Name:" class="p-cn"><input placeholder="Write your name here..." class="input-cn" id="name" name="name" required ></input></p>
+            <p type="Email:" class="p-cn"><input placeholder="Write your e-mail..." class="input-cn" id="email" name="email" required></input></p>
+            <p type="Message:" class="p-cn" ><input placeholder="What would you like to tell us..." class="input-cn" name="message" id="message" required></input></p>
             <button class="get-btn btn-cn" type="sumbit">Send Message</button>
           </form>
           </div>
