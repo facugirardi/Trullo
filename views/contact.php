@@ -58,8 +58,6 @@
           </form>
           </div>
     </main>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="../js/contact.js"></script>
     <script src="../js/log.js"></script>
 </body>
 </html>
