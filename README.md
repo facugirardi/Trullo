@@ -12,5 +12,5 @@ your projects into boards. In one glance, *Trullo* tells you what's being worked
 ![Screenshot from 2023-03-14 13-58-53](https://user-images.githubusercontent.com/82075452/225081265-fdaf4741-7ea2-4662-8397-5b1fb0585765.jpg)
 
 
-### Developers
+## Developers
 Developed by Facundo Girardi and Octavio Ferreyra.
