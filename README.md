@@ -1,5 +1,4 @@
 # Trullo
-Proyecto Programación 5°C
 
 
 ## What is trullo?
